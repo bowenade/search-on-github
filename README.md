@@ -1,5 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Description 
+
+This project allow you to search for projects on Github using git API.
+
+run `npm start` in your terminal and start searching.
+
 ## Available Scripts
 
 In the project directory, you can run:
