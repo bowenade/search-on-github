@@ -28,12 +28,23 @@ class SearchBar extends React.Component {
   
 
     searchChangeHandler(event) {
-        const search = {
-                        type: "SEARCH",
-                        // pass in the search text
-                        value: event.target.value
-                    }
-        this.props.dispatch(search)
+        const text = event.target.value;
+
+        // search empty string 
+        // if (text === ""){
+        //     console.log("Empty inputs")
+        //     this.props.dispatch({type: "SEARCH_EMPTY"})
+        // }
+        // // have some text for search
+        // else{
+            const search = {
+                            type: "SEARCH",
+                            // pass in the search text
+                            value: text
+                        }
+            console.log(text)
+            this.props.dispatch(search)
+        // }
     }
 }
 

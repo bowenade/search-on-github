@@ -11,6 +11,10 @@ function reducer(state = initialState, action) {
             project: action.project
         } 
         
+      case "SEARCH_EMPTY":
+        return {
+          project: []
+        }
       default:
         // console.log(state)
         return state;
